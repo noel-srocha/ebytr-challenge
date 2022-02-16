@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { api } from '../../services/api';
 import { Container } from './styles';
 
 export function TasksTable() {
+  useEffect(() => {
+    api('tasks')
+      .then((response) => console.log(response.data));
+  }, []);
+
   return (
     <Container>
       <table>
