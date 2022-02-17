@@ -1,70 +1,165 @@
-# Getting Started with Create React App
+# Ebytr Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> Live demo at [_Vercel_](https://www.example.com).
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+* [General Info](#general-information)
+* [Technologies Used](#technologies-used)
+* [Features](#features)
+* [Screenshots](#screenshots)
+* [Setup](#setup)
+* [Usage](#usage)
+* [Project Status](#project-status)
+* [Room for Improvement](#room-for-improvement)
+* [Acknowledgements](#acknowledgements)
+* [Contact](#contact)
+* [License](#license)
 
-### `npm start`
+## General Information
+### What problem does the project intend to solve?
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The Ebytr company is experiencing productivity/control problems because the collaborating people have been having difficulty in organizing their individual tasks. For this reason, product director Carolina Bigonha decided to implement a new way of organizing tasks.
+You were the person hired to develop a system capable of helping collaborating people get organized and be more productive.
+At Ebytr the development team uses Stack __MERN__ to create their applications. It was agreed with Ebytr that you will use this same Stack to solve the organization and productivity problem of the company.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### What is the purpose of the project?
 
-### `npm test`
+This project was a challenge promoted by [Trybe](https://www.betrybe.com) as a mean to prepare its students to technical challenges when applying to jobs in tech companies. Not only we were expected to perform in accordance to the technical requirements of this challenge, but also be prepared to be interviewed by recruiters asking about the know-hows and whys of our solutions.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Why did I undertake it?
 
-### `npm run build`
+At [Trybe](https://www.betrybe.com), I was mostly studying(and struggling) to understand backend technologies with __NodeJS__ and other tools like __Sequelize__ and __Socket.io__. This challenge came at a time when I was still reviewing frontend technologies like __React__ and __Vue__, for example, and learning to construct websites using __TypeScript__.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Knowing that I had (and still have) long ways to go to work easily in frontend, I still accepted the challenge where I could get better at for the foreseeable future and add improvements to my current capabilities.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Technical Requirements
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Front-End done with __React__;
+2. Back-End done with __NodeJS__ and __MongoDB__;
+3. Use __layered architecture__ (MSC or MVC);
 
-### `npm run eject`
+## Technologies Used
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- [NPM](https://www.npmjs.com) - ```^8.1.2```
+- [Node](https://nodejs.org/en/) - ```^16.13.2```
+- [React](https://reactjs.org) - ```^17.0.2```
+- [Styled Components](https://styled-components.com) - ```^5.3.3```
+- [MirageJS](https://miragejs.com) - ```^0.1.43```
+- [Vercel](https://vercel.com)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Features
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Add new ToDos with Modal;
+- List all registered ToDos;
+- Sort ToDos List by title.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## Screenshots
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<div style="width: 60%; margin: 0 auto; text-align: center; font-style: italic;">
+  <img src="./imgs/screenshot1.png" >
+  <p>Screenshot 1</p>
+  <img src="./imgs/screenshot2.png">
+  <p>Screenshot 2</p>
+</div>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<div style="width: 60%; margin: 0 auto; text-align: center; font-style: italic;">
+  <img src="./imgs/screenshot3.png">
+  <p>Screenshot 3</p>
+  <img src="./imgs/screenshot4.png">
+  <p>Screenshot 4</p>
+</div>
 
-### Code Splitting
+## Setup
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Clone the project from Github :
 
-### Analyzing the Bundle Size
+__SSH Method__
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```sh
+$ git clone git@github.com:noel-srocha/ebytr-challenge.git
+$ cd ebytr-challenge
+```
 
-### Making a Progressive Web App
+__HTTPS Method__
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```sh
+$ git clone https://github.com/noel-srocha/ebytr-challenge.git
+$ cd ebytr-challenge
+```
 
-### Advanced Configuration
+Once inside the project\'s root folder, paste the following code to your terminal:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```sh
+$ npm install
+```
 
-### Deployment
+## Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+How does one go about using it?
+Provide various use cases and code examples here.
 
-### `npm run build` fails to minify
+While in development, after installing all dependencies, start by launching the app on localhost by type the following command in your terminal (be mindful that you must be at the project\'s root folder):
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```sh
+$ npm start
+```
+
+This will let you observe how the app behaves on the browser.
+
+### Contributing
+
+If you wish to make modifications and contribute to the project, paste the following command to your terminal:
+
+```sh
+$ git checkout development
+```
+
+This will change the current branch of the repository to the one reserved for development of new features and chores. If you would like to add new branchs according to your goals, simply:
+
+```sh
+$ git checkout -b {branchName}
+```
+
+After making your modifications, follow the instructions below:
+
+```sh
+git add [files-you-modified-/-created-/-deleted]
+git commit -m "Tell me what you did"
+git push # or git push -u origin {branchName} in case you created a new branch
+```
+
+This will create a Pull Request in this repository where it will be analyzed and, if approved, merged to the main branch.
+
+## Project Status
+
+Project is: _archived for later development_. Currently, I'm migrating towards TypeScript projects, so I can better familiarize with the language and then learn new frontend technologies to better improve my workflow and create websites seamlessly.
+
+
+## Improvements Needed
+
+Room for improvement:
+
+- Make a true backend to store tasks and serve data back to the frontend;
+- Add features like task completion, priority configuration, notifications by email and others;
+- Build a better stylization to give an authentic feel to the website.
+
+To do:
+
+- Build tests to provide security to the application;
+- Add true backend with NodeJS and MongoDB using Mongoose;
+- Make slight adjustments to the styling.
+
+## Acknowledgements
+
+- This project was inspired by [Trybe](https://www.betrybe.com)
+- Many thanks to [Rocketseat](https://www.rocketseat.com.br) for providing the lessons needed to give this challenge a go!
+
+## Contact
+
+Created by [Manoel de Souza Rocha Neto](https://www.linkedin.com/in/devmanoelrochaneto/) - feel free to contact me!
+
+## License
+
+This project is open source and available under the __MIT License__.
