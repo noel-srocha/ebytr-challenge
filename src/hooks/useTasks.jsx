@@ -12,7 +12,9 @@ export function TasksProvider({ children }) {
 
   useEffect(() => {
     api('tasks')
-      .then((response) => setTasks(response.data.tasks));
+      .then((response) => setTasks(
+        response.data.tasks.sort((a, b) => a.title.localeCompare(b.title)),
+      ));
   }, []);
 
   async function createTask(taskInput) {
@@ -22,7 +24,7 @@ export function TasksProvider({ children }) {
     });
     const { task } = response.data;
 
-    setTasks([...tasks, task]);
+    setTasks([...tasks, task].sort((a, b) => a.title.localeCompare(b.title)));
   }
 
   return (
