@@ -1,22 +1,23 @@
-# Ebytr Challenge
+# :beginner: Ebytr Challenge
 
 > Live demo at [_Vercel_](https://www.example.com).
 
-## Table of Contents
+## :page_facing_up: Table of Contents
 
-* [General Info](#general-information)
-* [Technologies Used](#technologies-used)
-* [Features](#features)
-* [Screenshots](#screenshots)
-* [Setup](#setup)
-* [Usage](#usage)
-* [Project Status](#project-status)
-* [Room for Improvement](#room-for-improvement)
-* [Acknowledgements](#acknowledgements)
-* [Contact](#contact)
-* [License](#license)
+- [General Information](#general-information)
+- [Technologies Used](#technologies-used)
+- [Current Features](#current-features)
+- [Screenshots](#screenshots)
+- [Setup](#setup)
+- [Usage](#usage)
+- [Project Status](#project-status)
+- [Improvements Needed](#improvements-needed)
+- [Acknowledgements](#acknowledgements)
+- [Contact](#contact)
+- [License](#license)
 
 ## General Information
+
 ### What problem does the project intend to solve?
 
 The Ebytr company is experiencing productivity/control problems because the collaborating people have been having difficulty in organizing their individual tasks. For this reason, product director Carolina Bigonha decided to implement a new way of organizing tasks.
@@ -48,7 +49,7 @@ Knowing that I had (and still have) long ways to go to work easily in frontend, 
 - [MirageJS](https://miragejs.com) - ```^0.1.43```
 - [Vercel](https://vercel.com)
 
-## Features
+## Current Features
 
 - Add new ToDos with Modal;
 - List all registered ToDos;
@@ -57,19 +58,10 @@ Knowing that I had (and still have) long ways to go to work easily in frontend, 
 
 ## Screenshots
 
-<div style="width: 60%; margin: 0 auto; text-align: center; font-style: italic;">
-  <img src="./imgs/screenshot1.png" >
-  <p>Screenshot 1</p>
-  <img src="./imgs/screenshot2.png">
-  <p>Screenshot 2</p>
-</div>
-
-<div style="width: 60%; margin: 0 auto; text-align: center; font-style: italic;">
-  <img src="./imgs/screenshot3.png">
-  <p>Screenshot 3</p>
-  <img src="./imgs/screenshot4.png">
-  <p>Screenshot 4</p>
-</div>
+![Screenshot 1](./imgs/screenshot1.png)
+![Screenshot 2](./imgs/screenshot2.png)
+![Screenshot 3](./imgs/screenshot3.png)
+![Screenshot 4](./imgs/screenshot4.png)
 
 ## Setup
 
