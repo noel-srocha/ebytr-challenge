@@ -1,6 +1,6 @@
 # :beginner: Ebytr Challenge
 
-> Live demo at [_Vercel_](https://www.example.com).
+> A ToDo List challenge made by [Trybe](https://www.betrybe.com)
 
 ## :page_facing_up: Table of Contents
 
