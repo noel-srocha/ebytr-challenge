@@ -7,17 +7,31 @@ export const Container = styled.header`
 export const Content = styled.div`
   max-width: 1120px;
   margin: 0 auto;
-  padding: 2rem 1rem 4rem;
+  padding: 1rem 1rem 1rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
-  img {
+  div {
     width: 20%;
-    height: 20%;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    h1 {
+      color: #fff;
+    }
   }
 
   button {
     font-size: 1rem;
+    font-weight: 600;
     color: #fff;
     background-color: var(--blue-light);
     border: 0;

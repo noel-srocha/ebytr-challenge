@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-
 // eslint-disable-next-line import/prefer-default-export
 export const Container = styled.div`
   margin-top: 4rem;
@@ -20,6 +19,7 @@ export const Container = styled.div`
       background: var(--shape);
       color: var(--text-body);
       border-radius: 0.25rem;
+      
       &:first-child {
         color: var(--text-title);
       }
