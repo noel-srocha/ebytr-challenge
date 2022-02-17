@@ -1,12 +1,16 @@
-import React, { useEffect } from 'react';
-import { api } from '../../services/api';
+import React, { useState } from 'react';
+import { useTasks } from '../../hooks/useTasks';
 import { Container } from './styles';
 
 export function TasksTable() {
-  useEffect(() => {
-    api('tasks')
-      .then((response) => console.log(response.data));
-  }, []);
+  const { tasks } = useTasks();
+  const [status, setStatus] = useState('pending');
+
+  function handleChangeTaskStatus({ target }) {
+    if (target.value === 'Em Andamento') setStatus('in-progress');
+    else if (target.value === 'Concluído') setStatus('complete');
+    else setStatus('pending');
+  }
 
   return (
     <Container>
@@ -20,18 +24,28 @@ export function TasksTable() {
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>Estudar sobre Styled Components</td>
-            <td>
-              <select name="task-status" id="task-status">
-                <option value="pending">Pendente</option>
-                <option value="in progress">Em Andamento</option>
-                <option value="completed">Concluída</option>
-              </select>
-            </td>
-            <td>Desenvolvimento</td>
-            <td>14/02/2022</td>
-          </tr>
+          {tasks.map(({
+            id, title, category, createdAt,
+          }) => (
+            <tr key={id}>
+              <td>{title}</td>
+              <td>
+                <select
+                  name="task-status"
+                  className={status}
+                  onChange={handleChangeTaskStatus}
+                >
+                  <option value="pending">Pendente</option>
+                  <option value="in progress">Em Andamento</option>
+                  <option value="completed">Concluída</option>
+                </select>
+              </td>
+              <td>{category}</td>
+              <td>
+                {new Intl.DateTimeFormat('pt-BR').format(new Date(createdAt))}
+              </td>
+            </tr>
+          ))}
         </tbody>
       </table>
     </Container>

@@ -1,14 +1,19 @@
 import React from 'react';
+import propTypes from 'prop-types';
 import { Container, Content } from './styles';
-import logo from '../../assets/logo.svg';
+import logo from '../../assets/logo.png';
 
-export default function Header() {
+export default function Header({ onOpenNewTaskModal }) {
   return (
     <Container>
       <Content>
-        <img src={logo} alt="Logomarca" />
+        <div>
+          <img src={logo} alt="Logomarca" />
+          <h1>TaskNinja</h1>
+        </div>
         <button
           type="button"
+          onClick={onOpenNewTaskModal}
         >
           Nova Tarefa
         </button>
@@ -16,3 +21,7 @@ export default function Header() {
     </Container>
   );
 }
+
+Header.propTypes = {
+  onOpenNewTaskModal: propTypes.func.isRequired,
+};
